@@ -1,4 +1,4 @@
-"use client";
+"use client"
 
 import { navLinks } from "@/lib/constants"
 import { UserButton } from "@clerk/nextjs"

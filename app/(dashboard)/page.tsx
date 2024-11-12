@@ -1,6 +1,8 @@
-import { UserButton } from "@clerk/nextjs";
+import { connectToDB } from "@/lib/mongoDB";
 
-export default function Home() {
+export default async function Home() {
+  connectToDB();
+
   return (
     <div>
       Home
