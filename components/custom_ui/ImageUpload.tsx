@@ -35,7 +35,7 @@ const ImageUpload: React.FC<ImageUploadProps> = ({onChange, onRemove, value}) =>
       <CldUploadWidget uploadPreset="yxhmdpfa" onSuccess={onUpload}>
         {({ open }) => {
           return (
-            <Button onClick={() => open()}>
+            <Button onClick={(e) => {e.preventDefault(); open();}}>
               <Plus className="h-4 w-4 mr-2" />
               Upload Image
             </Button>
